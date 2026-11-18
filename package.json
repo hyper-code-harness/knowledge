@@ -1,7 +1,11 @@
 {
   "name": "knowledge",
-  "private": true,
+  "version": "1.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyper-code-harness/knowledge"
+  },
   "procs": {
     "configuration": {
       "settings": [
@@ -13,5 +17,8 @@
     "icon": "ph-graph",
     "optional": true,
     "description": "Store and search typed people, organizations, products, and concepts with sources and relationships."
+  },
+  "scripts": {
+    "test": "bun ${HYPER_CODE:-../hyper-code}/script/plugin-test.ts ."
   }
 }
